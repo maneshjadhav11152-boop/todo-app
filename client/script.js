@@ -203,7 +203,7 @@ async function deleteTask(id) {
     if (!confirm("Are you sure you want to delete this task?")) {
     return;
 }
-  await fetch(`http://localhost:5000/api/tasks/${id}`, {
+  await fetch(`https://todo-app-52er.onrender.com/api/tasks/${id}`, {
     method: "DELETE",
   });
 
