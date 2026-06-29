@@ -1,4 +1,4 @@
-const AUTH_API_URL = "http://localhost:5000/api/auth";
+const AUTH_API_URL = "https://todo-app-52er.onrender.com/api/auth";
 
 // ---------- LOGIN ----------
 const loginBtn = document.getElementById("loginBtn");
