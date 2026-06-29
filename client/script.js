@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://todo-app-52er.onrender.com/api/tasks";
 const toast = document.getElementById("toast");
 const loader = document.getElementById("loader");
 const emptyState = document.getElementById("emptyState");
