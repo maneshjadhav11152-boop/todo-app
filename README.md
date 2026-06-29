@@ -4,6 +4,12 @@ A modern Full Stack Todo Application built using HTML, CSS, JavaScript, Node.js,
 
 ---
 
+## 🚀 Live Demo
+
+🌍 **Todo App:** https://manesh-todo-app.netlify.app/
+
+---
+
 ## 🚀 Features
 
 - 🔐 User Authentication (Login & Register)
