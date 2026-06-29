@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+      <div class="header">
+        <div id="welcomeUser"></div>
+    <h1>📝 Todo App</h1>
+
+    <div>
+        <div class="profile">
+    <button id="profileBtn">👤</button>
+
+    <div id="profileMenu" class="profile-menu">
+
+        <h3 id="profileName"></h3>
+        <p id="profileEmail"></p>
+
+        <hr>
+
+        <button id="logoutBtn">🚪 Logout</button>
+
+    </div>
+</div>
+        <button id="themeBtn">🌙</button>
+    </div>
+</div>
+
+        <div class="input-box">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task..."
+            >
+            <input
+                type="date"
+                id="dueDate"
+            />
+            <button id="addBtn">Add Task</button>
+            <button id="updateBtn" style="display:none;">Update Task</button>
+        </div>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search task..."
+            >
+             <select id="sortSelect">
+    <option value="default">Sort Tasks</option>
+    <option value="az">A → Z</option>
+    <option value="za">Z → A</option>
+    <option value="date">Due Date</option>
+</select>
+          
+        <div class="filters">
+           <button id="allBtn">All</button>
+           <button id="pendingBtn">Pending</button>
+           <button id="completedBtn">Completed</button>
+        </div>
+
+        <div class="dashboard">
+    <div class="card">
+        <h3>Total</h3>
+        <p id="totalTasks">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Pending</h3>
+        <p id="pendingTasks">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Completed</h3>
+        <p id="completedTasks">0</p>
+    </div>
+</div>
+                
+
+       <div id="loader" class="loader"></div>
+       <div id="emptyState" class="empty-state">
+    <h2>📭</h2>
+    <h3>No Tasks Found</h3>
+    <p>Create your first task to get started.</p>
+</div>
+
+
+       <ul id="taskList"></ul>
+       <div class="pagination">
+    <button id="prevPage">⬅ Previous</button>
+
+    <span id="pageInfo">Page 1</span>
+
+    <button id="nextPage">Next ➡</button>
+</div>
+
+        
+    </div>
+    
+     <div id="toast"></div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+
+</body>
+</html>
